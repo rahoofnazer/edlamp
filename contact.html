@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="author" content="Edlamp" />
+        <meta name="description"
+        content="">
+        <link rel="icon" type="image/png" href="img/LOGO/logo.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Document title -->
+        <title>EdLAMP ACADEMY</title>
+    
+        <!-- Stylesheets & Fonts -->
+        <link href="css/plugins.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style1.css">
+    
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="body-inner">
+            <!-- Header -->
+            <header id="header" class="dark submenu-light" data-fullwidth="true" data-transparent="true">
+                <div class="header-inner">
+                    <div class="container">
+                        <!--Logo-->
+                        <div id="logo" style="padding-left: 1rem !important;
+                        text-align-last: left;">
+                            <a href="index.html">
+                                <span class="logo-default padsm" style="padding-right: 13rem !important;">
+                                    <img src="img/LOGO/logo.png" style="width: 94px; height: auto;"> </span>
+                                <span class="logo-dark padsm msm2" style=" padding-right: 13rem !important;"><img
+                                        class="logowidthtab" src="img/LOGO/logo.png" style="width: 160px; height: auto;">
+                                </span>
+                            </a>
+                        </div>
+                        <!--End: Logo-->
+                        <!-- Search -->
+    
+                        <!--end: Header Extras-->
+                        <!--Navigation Resposnive Trigger-->
+                        <div id="mainMenu-trigger">
+                            <a class="lines-button x"><span class="lines"></span></a>
+                        </div>
+                        <!--end: Navigation Resposnive Trigger-->
+                        <div id="mainMenu">
+                            <div class="container">
+                                <nav>
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+    
+    
+                                        <li class="dropdown mega-menu-item"><a href="aboutus.html">About</a>
+    
+                                        </li>
+                                        <li class="dropdown"><a href="contact.html">Contact</a>
+    
+                                        </li>
+                                        <li>
+                                            <a href="/book_a_free_trial.html">
+                                                <button type="button" class="btn btn-xs btn-dark btn-outline">Book A Free
+                                                    Trial</button>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/pay">
+                                                <button type="button"
+                                                    class="btn btn-xs btn-dark btn-outline">Payment</button>
+                                            </a>
+                                        </li>
+    
+    
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!--end: Navigation-->
+                    </div>
+                </div>
+            </header>
+        <!-- end: Header -->
+        <!-- Page title -->
+
+
+     
+
+        <div class="container p-t-100">
+            <div class="my-auto" >  
+        
+        
+            <form class="col-lg-5 " style="margin: auto;" id="robohome">
+              <div class="col-lg-12 ">
+                <div class="row">
+
+                  
+                  <div class="col-lg-12 col-12 pl-0 mb-5 pr-0">
+                    <span class="badge badge-danger col-lg-12" style="background-color: #08223c; ">
+                      <h4 class="pl-0" style="color: white;">Get In Touch</h4>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            <div class="form-group">
+                <input class="form-control" id="Student" name="Student"  placeholder="Student Name" type="text" required>
+            </div>
+        
+       
+            <div class="form-group">
+                <input class="form-control" id="Parent" name="Parent" type="text" placeholder="Parent Name" required>
+            </div>
+        
+            <div class="form-group">
+                <input class="form-control" id="region" name="region" type="text" placeholder="Region or Location" required>
+            </div>
+
+            <div class="form-group">
+              <input class="form-control" id="Phone" name="Phone" placeholder="Phone" type="text" required>
+          </div>
+        
+          <div class="form-group">
+            <input class="form-control" id="Email" name="Email" placeholder="Email" type="email">
+        </div>
+
+        <div class="form-group">
+            <textarea name="Message" id="Message" class="form-control" placeholder="Your Message" style="width: 100%; min-height: 160px;" ></textarea>        
+        </div>
+        
+        <small>By clicking on Submit, you acknowledge that you accept our <a href="privacypolicy">Privacy policy</a> & <a href="termsandconditions">Terms and conditions</a>.
+        </small>
+        
+            <button type="submit" class="btn btn-outline btn-dark btn-rounded mt-3 col-lg-6" >SUBMIT</button>
+        </form>
+        
+        </div>
+        </div>
+       
+        
+    <footer id="footer" class="mt-0" >
+      
+        <div class="copyright-content">
+            <div class="container">
+                <div class="copyright-text text-center">All rights reserved. © EdLAMP ACADEMY 2021. </div>
+            </div>
+        </div>
+    </footer>
+    
+    <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
+
+
+    <script>
+        $("#submit-formn").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"",
+                data:$("#submit-formn").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    window.location.href="http://www.horizonein.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+
+    <!--Plugins-->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.js"></script>
+    <!--Template functions-->
+    <script src="js/functions.js"></script>
+    <!--Google Maps files-->
+  
+</body>
+
+</html>
